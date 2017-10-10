@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'students/create'
+  get 'results' => 'students#results'
+  post 'result' => 'students#add'
+  root "students#create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
